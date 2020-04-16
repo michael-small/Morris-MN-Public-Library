@@ -9,3 +9,5 @@ meta:
   title: The Ultimate Gatsby Starter
 ---
 Browse our [Enterprise Catalog](https://www.morrispublib.org/client/en_US/mo/?dt=list)
+
+The library is closed until further notice. Please check the webpage above for announcements.
