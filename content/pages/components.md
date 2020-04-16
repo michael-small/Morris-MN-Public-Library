@@ -18,10 +18,10 @@ section1: >-
   bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
   vestibulum.
 section2: |-
-  ## You can use videos, images and text.
+  ## You can insert videos!
 
   <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/Js00yn142ic" frameborder="0"
+  src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0"
   allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 video: 'https://ucarecdn.com/e6979298-66d6-4245-b496-6e5a5d507135/'
