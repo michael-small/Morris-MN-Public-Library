@@ -11,3 +11,15 @@ meta:
 Browse our [Enterprise Catalog](https://www.morrispublib.org/client/en_US/mo/?dt=list)
 
 The library is closed until further notice. Please check the webpage above for announcements.
+
+# Library Hours
+
+Monday - Thursday: 10:00AM - 8:00PM
+
+Friday - Saturday 10:00AM - 5:00PM
+
+Closed Sunday
+
+# Address/Phone/Email
+
+(insert here)
