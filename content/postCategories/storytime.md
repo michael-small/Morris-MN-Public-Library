@@ -1,5 +1,5 @@
 ---
 template: BlogIndex
 title: Storytime
-featuredImage: https://ucarecdn.com/95b57b7e-b3b9-4447-a111-e206545e610d/-/crop/1920x637/0,0/-/preview/
+featuredImage: https://ucarecdn.com/dec73851-dc32-40d5-9faa-4f28099802ba/
 ---
