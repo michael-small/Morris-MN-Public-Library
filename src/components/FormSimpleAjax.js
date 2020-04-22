@@ -77,44 +77,13 @@ class Form extends React.Component {
               <input
                 className="Form--Input Form--InputText"
                 type="text"
-                placeholder="Firstname"
-                name="firstname"
+                placeholder="Firstname" 
+                name="firstname" //not sure how input forms work in vanilla html/js so this may not point to the right stuff
                 required
               />
-              <span>Firstname</span>
-            </label>
-            <label className="Form--Label">
-              <input
-                className="Form--Input Form--InputText"
-                type="text"
-                placeholder="Lastname"
-                name="lastname"
-                required
-              />
-              <span>Lastname</span>
+              <span>Name</span>
             </label>
           </div>
-          <fieldset>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="male"
-                defaultChecked
-              />
-              <span>Male</span>
-            </label>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="female"
-              />
-              <span>Female</span>
-            </label>
-          </fieldset>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
@@ -136,8 +105,8 @@ class Form extends React.Component {
                 Type of Enquiry
               </option>
               <option>Need to know more</option>
-              <option>Found a bug</option>
               <option>Want to say hello</option>
+              <option>Found a bug</option>
             </select>
           </label>
           <label className="Form--Label">
@@ -167,7 +136,7 @@ class Form extends React.Component {
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Enquire"
+            value="Submit"
             disabled={this.state.disabled}
           />
         </form>

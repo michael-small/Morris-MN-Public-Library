@@ -21,5 +21,3 @@ Friday - Saturday 10:00AM - 5:00PM
 Closed Sunday
 
 # Address/Phone/Email
-
-(insert here) Hi this is where Kedrick tested the saving of changes. Please delete me soon.
