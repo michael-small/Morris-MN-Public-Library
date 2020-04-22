@@ -136,7 +136,3 @@ https://hooks.zapier.com/hooks/catch/2881617/ea5exg/
 - Give your Zap a name and make sure your zap is turned on
 - Submit your form one last time and see if all data is coming trough to MailChimp
 - That's it!
-
-## Instagram Feed
-
-Get Your Instagram Access Token [here](https://generator.thrivex.io/). In order to display your Instagram photos on your own website, you are required to provide an Instagram Access Token. You can do this by clicking the generator button on this site you will first need to login to your account.
