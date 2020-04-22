@@ -2,7 +2,7 @@
 template: HomePage
 slug: ""
 title: Morris Public Library
-featuredImage: https://ucarecdn.com/a9d503cd-fa62-4d99-87d8-be82a8b89be2/
+featuredImage: https://ucarecdn.com/5a1cfa84-546a-4b56-bcc3-ed6003dc87d1/
 subtitle: "**Work in progress**"
 meta:
   description: This is a meta description.
