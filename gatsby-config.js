@@ -48,7 +48,7 @@ module.exports = {
         short_name: 'yellowcake',
         start_url: '/',
         background_color: '#00C2BD',
-        theme_color: '#00C2BD',
+        theme_color: '#5d0f06',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
