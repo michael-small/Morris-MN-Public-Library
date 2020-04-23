@@ -8,8 +8,7 @@ address: |+
   102 E. 6th St. Morris, MN 56267
 
 phone: 320-589-1634
-email: "The library is closed to the public, but staff is available to answer
-  questions via phone or email: staff@email.com"
+email: abarber@morrispublib.org
 meta:
   description: ""
   title: Contact Page
