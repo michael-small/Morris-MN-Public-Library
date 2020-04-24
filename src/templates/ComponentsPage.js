@@ -8,6 +8,7 @@ import Accordion from '../components/Accordion'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
+import './ComponentsPage.css'
 
 // Export Template for use in CMS preview
 export const ComponentsPageTemplate = ({
@@ -44,7 +45,19 @@ export const ComponentsPageTemplate = ({
 
     <section className="section">
       <div className="container">
+        source is section2 of components.md(responsive iframe doesn't apply)
         <Content source={section2} />
+        <br></br>
+        source is body of components.md file,contains an iframe tag (responsive iframe applies)
+        <Content source={body} />
+        <br></br>
+        CSS applied to nested div containing iframe(responsive iframe not used)
+        <div className="SelfContent">
+            <div className="SelfWrap">
+              <iframe width="799" height="720" src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+            </div>
+        </div>
       </div>
     </section>
 
