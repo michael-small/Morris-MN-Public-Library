@@ -8,9 +8,18 @@ meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
 ---
-Browse our [Enterprise Catalog](https://www.morrispublib.org/client/en_US/mo/?dt=list)
+# Address
 
-The library is closed until further notice. Please check the webpage above for announcements.
+102 East 6th Street\
+Morris, MN 56267
+
+# Phone
+
+320/589-1634
+
+# Email
+
+[abarber@morrispublib.org](mailto:abarber@morrispublib.org)
 
 # Library Hours
 
@@ -20,4 +29,4 @@ Friday - Saturday 10:00AM - 5:00PM
 
 Closed Sunday
 
-# Address/Phone/Email
+Covid Hours: Mon-Fri 9am-5pm, Curbside Pick-Up Tuesdays and Fridays 2-4pm
