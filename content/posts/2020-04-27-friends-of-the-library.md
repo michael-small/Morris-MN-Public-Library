@@ -4,6 +4,8 @@ title: Friends of the Library
 status: Published
 date: 2020-04-27T10:01:00.359Z
 excerpt: Friends of the Library
+categories:
+  - category: Welcome Page
 ---
 <!--StartFragment-->
 
