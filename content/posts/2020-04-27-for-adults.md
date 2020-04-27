@@ -1,0 +1,39 @@
+---
+template: SinglePost
+title: For Adults
+status: Published
+date: 2020-04-27T09:55:38.765Z
+featuredImage: ""
+excerpt: For Adults
+---
+<!--StartFragment-->
+
+BOOKS & MORE BOOKS
+
+* [Books to Read Before College](http://www.intothebest.com/Books2ReadBeforeCollege.html)
+* [eBooks](http://www.elm4you.org/databases/ebooks.php "e-books")
+* [Graphic Novels](http://www.ala.org/ala/mgrps/divs/yalsa/booklistsawards/greatgraphicnovelsforteens/gn.cfm "Graphic Novels")
+* [Young Adult Award Winning Book](http://www.ala.org/ala/mgrps/divs/yalsa/booklistsawards/booklistsbook.cfm)
+
+RESUME HELPS
+
+* [Cover Letter Templates](http://www.hloom.com/cover-letters/ "Cover")
+* [LiveCareer Reume Tips](https://www.livecareer.com/resumes/samples "Helps")
+
+CAREER & COLLEGE
+
+* [ACT Assessment](http://www.act.org/content/act/en/products-and-services/the-act/taking-the-test/test-center-locator.html "ACT Test")
+* [Career One Stop](http://www.careeronestop.org/)
+* [Green Careers](http://www.ecoemploy.com/?gclid=Cj0KEQiAuJXFBRDirIGnpZLE-N4BEiQAqV0KGkqC3J4u2OmMYh_Zeo6xpoFNyvRVjGus9Vz0-WLF524aAvIn8P8HAQ "Green Careers")
+* [Peterson's Home Page](http://www.petersons.com/)(information about colleges)
+* [Reputation management online](http://www.reputationmanagement.com/)
+
+OTHER
+
+[Minnesota Drivers Test](http://www.dmv-written-test.com/minnesota/practice-test-1.html?gclid=Cj0KEQiAuJXFBRDirIGnpZLE-N4BEiQAqV0KGvzaFPa8feHasMO9YGDwlSZo2XcR3ux0XGMDHIL8WkEaAnI78P8HAQ "Minnesota Drivers Test")
+
+[Minnesota Voter's Registration](http://www.sos.state.mn.us/home/index.asp?page=204)
+
+[Car Insurance for Teens](https://www.obrella.com/resources/best-auto-insurance-for-teen-drivers/ "Auto insurance for teens")
+
+<!--EndFragment-->
