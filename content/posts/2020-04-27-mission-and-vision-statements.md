@@ -4,6 +4,8 @@ title: Mission and Vision Statements
 status: Published
 date: 2020-04-27T10:00:28.269Z
 excerpt: Mission and Vision Statements
+categories:
+  - category: Welcome Page
 ---
 <!--StartFragment-->
 
