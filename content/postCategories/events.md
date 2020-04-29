@@ -1,0 +1,4 @@
+---
+template: BlogIndex
+title: Events
+---
