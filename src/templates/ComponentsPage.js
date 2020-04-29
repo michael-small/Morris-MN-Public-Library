@@ -47,17 +47,6 @@ export const ComponentsPageTemplate = ({
       <div className="container">
         source is section2 of components.md(responsive iframe doesn't apply)
         <Content source={section2} />
-        <br></br>
-        source is body of components.md file,contains an iframe tag (responsive iframe applies)
-        <Content source={body} />
-        <br></br>
-        CSS applied to nested div containing iframe(responsive iframe not used)
-        <div className="SelfContent">
-            <div className="SelfWrap">
-              <iframe width="799" height="720" src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
-            </div>
-        </div>
       </div>
     </section>
 
