@@ -45,7 +45,6 @@ export const ComponentsPageTemplate = ({
 
     <section className="section">
       <div className="container">
-        source is section2 of components.md(responsive iframe doesn't apply)
         <Content source={section2} />
       </div>
     </section>
