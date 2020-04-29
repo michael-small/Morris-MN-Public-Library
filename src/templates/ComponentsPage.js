@@ -8,6 +8,7 @@ import Accordion from '../components/Accordion'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
+import './ComponentsPage.css'
 
 // Export Template for use in CMS preview
 export const ComponentsPageTemplate = ({
