@@ -2,7 +2,7 @@
 template: SinglePost
 title: Viking Library System
 status: Published
-date: 2020-04-27T10:01:42.269Z
+date: ""
 excerpt: Viking Library System
 categories:
   - category: Welcome Page
