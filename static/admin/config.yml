@@ -267,7 +267,12 @@ collections: # A list of collections the CMS should be able to edit
         widget: 'select'
         options: ['Published', 'Featured', 'Draft']
         default: 'Published'
-      - { label: Date / Order, name: date, widget: date, required: false}
+      - { 
+          label: Date / Order,
+          name: date,
+          widget: date,
+          required: false,
+          }
       - {
           label: Featured Image,
           name: featuredImage,
