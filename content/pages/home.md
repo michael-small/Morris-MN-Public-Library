@@ -13,14 +13,6 @@ Browse our [Enterprise Catalog](https://www.morrispublib.org/client/en_US/mo/?dt
 102 East 6th Street\
 Morris, MN 56267
 
-# Phone
-
-320/589-1634
-
-# Email
-
-[abarber@morrispublib.org](mailto:abarber@morrispublib.org)
-
 # Library Hours
 
 Covid Hours: 
@@ -31,6 +23,14 @@ Usual hours:
 * Monday - Thursday: 10:00AM - 8:00PM
 * Friday - Saturday 10:00AM - 5:00PM
 * Closed Sunday 
+
+# Phone
+
+320/589-1634
+
+# Email
+
+[abarber@morrispublib.org](mailto:abarber@morrispublib.org)
 
 # Calendar
 
