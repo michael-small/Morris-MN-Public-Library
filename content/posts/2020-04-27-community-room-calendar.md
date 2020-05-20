@@ -2,7 +2,7 @@
 template: SinglePost
 title: "Community Room Calendar "
 status: Published
-date: 2020-05-01T05:00:00.000Z
+date: 2020-05-01
 featuredImage: ""
 excerpt: "Community Room Calendar "
 categories:
