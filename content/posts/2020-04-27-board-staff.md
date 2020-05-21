@@ -2,7 +2,8 @@
 template: SinglePost
 title: Board & Staff
 status: Published
-date: 2020-05-15
+date: '2020-05-08'
+
 excerpt: Board & Staff
 categories:
   - category: Welcome Page
