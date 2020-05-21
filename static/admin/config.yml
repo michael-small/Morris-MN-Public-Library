@@ -367,9 +367,3 @@ collections: # A list of collections the CMS should be able to edit
             widget: object
             fields:
               - { label: Image, name: image, widget: image, required: false }
-          - {
-              label: Google Analytics Tracking Id,
-              name: googleTrackingId,
-              widget: string,
-              required: false,
-            }
