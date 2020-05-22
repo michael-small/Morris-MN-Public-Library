@@ -33,3 +33,9 @@
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 350px) {
+  .PageHeader--Title {
+    font-size: 2.5rem;
+  }
+}
