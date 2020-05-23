@@ -2,7 +2,7 @@
 template: SinglePost
 title: Friends of the Library
 status: Published
-date: 2020-05-01
+date: '2020-05-01'
 excerpt: Friends of the Library
 categories:
   - category: Welcome Page

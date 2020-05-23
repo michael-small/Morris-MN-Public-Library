@@ -2,7 +2,7 @@
 template: SinglePost
 title: Online Resources
 status: Published
-date: 2020-05-01
+date: '2020-05-01'
 featuredImage: ""
 excerpt: Online Resources
 categories:
