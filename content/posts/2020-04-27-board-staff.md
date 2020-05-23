@@ -2,7 +2,8 @@
 template: SinglePost
 title: Board & Staff
 status: Published
-date: 2020-05-25
+date: 2020-05-25T00:00:00.000Z
+featuredImage: https://ucarecdn.com/ca6f2e92-74fd-4541-9240-32998a4e8107/
 excerpt: Board & Staff
 categories:
   - category: Welcome Page
