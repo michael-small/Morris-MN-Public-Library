@@ -11,13 +11,13 @@ section1:
 
 
   [Dictumst a ultrices mi]() a dignissim ad fermentum eget a nam et a blandit scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam vel est ut proin dis auctor. Suscipit sceler isque orci magna interdum vel bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt vestibulum.
-section2: <iframe width="1280" height="720"
-  src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope;
-  picture-in-picture" allowfullscreen></iframe>
-video: https://ucarecdn.com/e6979298-66d6-4245-b496-6e5a5d507135/
-videoPoster: https://ucarecdn.com/69ba14a8-6481-4671-abb6-0e6f0d9c3e46/
-videoTitle: Also background videos, with poster image & title overlay.
+section2: |-
+
+          <iframe width="1280" height="720"
+          src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen></iframe>
+          
 accordion:
   - description: We are located one block east of Atlantic Avenue on 6th Street and
       Oregon Avenue. (link to map).
@@ -48,3 +48,6 @@ meta:
   description: This is a meta description.
   title: Components Page
 ---
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/rl-ocew9Dzw" frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

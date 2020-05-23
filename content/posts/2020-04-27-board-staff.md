@@ -2,13 +2,11 @@
 template: SinglePost
 title: Board & Staff
 status: Published
-date: 2020-04-27T09:58:29.269Z
+date: 2020-05-21T23:52:36.206Z
 excerpt: Board & Staff
 categories:
   - category: Welcome Page
 ---
-<!--StartFragment-->
-
 Library Board:
 
 Melanie Fohl, Chair
@@ -33,8 +31,6 @@ Tim Lindberg, Liaison to the Friends of the Library
 
 The Library Board meets the second Wednesday of the month at 5:15 pm.
 
-
-
 Library Staff:
 
 Anne Hennen Barber, Library Director
@@ -46,7 +42,3 @@ Sharon Ehlers
 Rachel Moe Brown
 
 Rilee Moulton
-
-
-
-<!--EndFragment-->

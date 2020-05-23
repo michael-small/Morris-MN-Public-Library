@@ -126,9 +126,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Section 1, name: section1, widget: markdown }
           - { label: Section 2, name: section2, widget: markdown }
-          - { name: video, label: video, widget: file }
-          - { name: videoPoster, label: videoPoster, widget: image }
-          - { label: videoTitle, name: videoTitle, widget: string }
           - label: 'accordion'
             name: 'accordion'
             widget: 'list'
@@ -267,7 +264,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: 'select'
         options: ['Published', 'Featured', 'Draft']
         default: 'Published'
-      - { label: Date / Order, name: date, widget: date }
+      - { label: Date / Order, name: date, widget: date, format: 'YYYY-MM-DD' }
       - {
           label: Featured Image,
           name: featuredImage,
