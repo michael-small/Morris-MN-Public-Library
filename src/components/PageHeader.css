@@ -8,10 +8,6 @@
   opacity: 0.8;
 }
 
-.PageHeader-large {
-  padding: 20rem 0;
-}
-
 .PageHeader--Title {
   font-size: 6rem;
   margin-bottom: 0;
@@ -30,7 +26,16 @@
   .PageHeader {
     padding: 7rem 0;
   }
-  .PageHeader-large {
-    padding: 12.5rem 0;
+  .PageHeader--Title {
+    font-size: 5rem;
+  }
+  .PageHeader--Subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .PageHeader--Title {
+    font-size: 2.5rem;
   }
 }

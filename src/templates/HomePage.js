@@ -9,7 +9,6 @@ import Layout from '../components/Layout'
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
     <PageHeader
-      large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
