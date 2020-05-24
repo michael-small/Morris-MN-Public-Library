@@ -3,6 +3,13 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+publish_mode: editorial_workflow
+
+site_url: https://michael-small.works
+logo_url: https://michael-small.works/images/LibraryLogo.svg'
+
+show_preview_links: false
+
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
   name: uploadcare
@@ -364,9 +371,3 @@ collections: # A list of collections the CMS should be able to edit
             widget: object
             fields:
               - { label: Image, name: image, widget: image, required: false }
-          - {
-              label: Google Analytics Tracking Id,
-              name: googleTrackingId,
-              widget: string,
-              required: false,
-            }

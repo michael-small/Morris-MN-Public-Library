@@ -2,7 +2,7 @@
 template: SinglePost
 title: Mission and Vision Statements
 status: Published
-date: 2020-05-01
+date: '2020-05-01'
 excerpt: Mission and Vision Statements
 categories:
   - category: Welcome Page

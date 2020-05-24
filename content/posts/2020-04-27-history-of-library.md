@@ -2,7 +2,7 @@
 template: SinglePost
 title: History of Library
 status: Published
-date: 2020-05-01
+date: '2020-05-01'
 featuredImage: ""
 excerpt: History of Library
 categories:
