@@ -6,7 +6,7 @@ backend:
 publish_mode: editorial_workflow
 
 site_url: https://michael-small.works
-logo_url: https://michael-small.works/images/LibraryLogo.svg'
+logo_url: https://michael-small.works/images/LibraryLogo.svg
 
 show_preview_links: false
 
