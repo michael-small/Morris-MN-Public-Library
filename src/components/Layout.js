@@ -16,7 +16,6 @@ export default ({ children, meta, title }) => {
           settingsYaml {
             siteTitle
             siteDescription
-            googleTrackingId
             socialMediaCard {
               image
             }
@@ -39,7 +38,7 @@ export default ({ children, meta, title }) => {
         }
       `}
       render={data => {
-        const { siteTitle, socialMediaCard, googleTrackingId } =
+        const { siteTitle, socialMediaCard } =
             data.settingsYaml || {},
           subNav = {
             posts: data.allPosts.hasOwnProperty('edges')
@@ -62,7 +61,6 @@ export default ({ children, meta, title }) => {
             </Helmet>
 
             <Meta
-              googleTrackingId={googleTrackingId}
               absoluteImageUrl={
                 socialMediaCard &&
                 socialMediaCard.image &&

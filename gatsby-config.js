@@ -9,14 +9,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        /*id: 'GTM-add_your_tag_here',*/
-        id: 'GTM-P4RNF8D',
-        includeInDevelopment: false
-      }
-    },
-    {
       resolve: 'gatsby-plugin-offline',
       options: {
         runtimeCaching: [

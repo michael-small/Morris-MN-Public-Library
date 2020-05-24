@@ -2,13 +2,11 @@
 template: SinglePost
 title: Board & Staff
 status: Published
-date: 2020-05-08
+date: '2020-05-23'
+featuredImage: https://ucarecdn.com/ca6f2e92-74fd-4541-9240-32998a4e8107/
 excerpt: Board & Staff
-categories:
-  - category: Welcome Page
+categories: []
 ---
-<!--StartFragment-->
-
 Library Board:
 
 Melanie Fohl, Chair
@@ -33,8 +31,6 @@ Tim Lindberg, Liaison to the Friends of the Library
 
 The Library Board meets the second Wednesday of the month at 5:15 pm.
 
-
-
 Library Staff:
 
 Anne Hennen Barber, Library Director
@@ -46,7 +42,3 @@ Sharon Ehlers
 Rachel Moe Brown
 
 Rilee Moulton
-
-
-
-<!--EndFragment-->

@@ -2,12 +2,14 @@
 template: SinglePost
 title: Online Resources
 status: Published
-date: 2020-05-01
-featuredImage: ""
+date: '2020-05-23'
+featuredImage: ''
 excerpt: Online Resources
 categories:
   - category: Features
 ---
+Client wants online resources to be on navigation bar
+
 [Meet Libby](https://help.libbyapp.com/)
 
 [Onedrive](http://vikingdigitallibrary.lib.overdrive.com/AA6D06CD-E222-4792-A1C6-D557D8B85BDD/10/50/en/Default.htm)
