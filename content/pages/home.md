@@ -21,5 +21,8 @@ Usual hours:
 
 * Monday - Thursday: 10:00AM - 8:00PM
 * Friday - Saturday 10:00AM - 5:00PM
+* Closed Sunday
+
+
 
 # Calendar
