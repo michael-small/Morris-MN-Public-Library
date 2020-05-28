@@ -48,12 +48,15 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Address, name: address, widget: text }
           - { label: Phone, name: phone, widget: string }
           - { label: Email Address, name: email, widget: string }
-          - { label: Meta, name: meta, widget: object, required: false,
-              fields: 
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
               - { label: Title, name: title, widget: string, required: false }
               - { label: Description, name: description, widget: text, required: false }
               - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+              - { label: Noindex, name: noindex, widget: boolean, required: false }
 
       - file: 'content/pages/blog.md'
         label: 'Blog Page'
@@ -64,12 +67,15 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Meta, name: meta, widget: object, required: false,
-              fields:
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
               - { label: Title, name: title, widget: string, required: false }
               - { label: Description, name: description, widget: text, required: false }
               - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+              - { label: Noindex, name: noindex, widget: boolean, required: false }
 
       - file: 'content/pages/components.md'
         label: 'Components Page'
@@ -82,21 +88,28 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Section 1, name: section1, widget: markdown }
           - { label: Section 2, name: section2, widget: markdown }
-          - { label: Accordion, name: accordion, widget: list,
-              fields:
+          - label: Accordion
+            name: accordion
+            widget: list,
+            fields:
               - { name: title, label: title, widget: string, default: '' }
-              - { name: description, label: description, widget: string }}
-          - { label: Gallery, name: gallery, widget: list,
-              fields:
+              - { name: description, label: description, widget: string }
+          - label: Gallery
+            name: gallery
+            widget: list,
+            fields:
               - { name: image, label: Image, widget: image }
               - { name: alt, label: Alt, widget: string }
-              - { name: title, label: Title, widget: string, required: false }}
-          - { label: Meta, name: meta, widget: object, required: false,
-              fields:
+              - { name: title, label: Title, widget: string, required: false }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
               - { label: Title, name: title, widget: string, required: false }
               - { label: Description, name: description, widget: text, required: false }
               - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+              - { label: Noindex, name: noindex, widget: boolean, required: false }
 
       - file: 'content/pages/home.md'
         label: 'Home Page'
@@ -108,16 +121,22 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
           - { label: Body, name: body, widget: markdown }
-          - { label: Accordion, name: accordion, widget: list, required: false,
-              fields:
+          - label: Accordion 
+            name: accordion
+            widget: list
+            required: false
+            fields:
               - { label: Title, name: title, widget: string }
-              - { label: Content, name: content, widget: text }}
-          - { label: Meta, name: meta, widget: object, required: false,
-              fields:
+              - { label: Content, name: content, widget: text }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
               - { label: Title, name: title, widget: string, required: false }
               - { label: Description, name: description, widget: text, required: false }
               - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+              - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: infoPages
     label: Info Page
@@ -132,12 +151,15 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Title, name: title, widget: string }
       - { label: Featured Image, name: featuredImage, widget: image }
       - { label: Body, name: body, widget: markdown }
-      - { label: Meta, name: meta, widget: object, required: false,
-              fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - { label: Description, name: description, widget: text, required: false }
-              - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+      - label: 'Meta'
+        required: false
+        name: 'meta'
+        widget: 'object'
+        fields:
+          - { label: Title, name: title, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
+          - { label: Noindex, name: noindex, widget: boolean, required: false }
 
            
   - name: posts
@@ -155,15 +177,21 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Featured Image, name: featuredImage, widget: image, required: false }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
-      - { label: Categories, name: categories, widget: list, required: false,
-          fields:
-          - { label: Category, name: category, widget: relation, collection: postCategories, searchFields: ['title'], valueField: title }}
-      - { label: Meta, name: meta, widget: object, required: false,
-              fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - { label: Description, name: description, widget: text, required: false }
-              - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-              - { label: Noindex, name: noindex, widget: boolean, required: false }}
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+        fields:
+          - { label: Category, name: category, widget: relation, collection: postCategories, searchFields: ['title'], valueField: title }
+      - label: 'Meta'
+        required: false
+        name: 'meta'
+        widget: 'object'
+        fields:
+          - { label: Title, name: title, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
+          - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: postCategories
     label: Post Category
@@ -177,12 +205,15 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
       - { label: Featured Image, name: featuredImage, widget: image, required: false }
-      - { label: Meta, name: meta, widget: object, required: false,
-          fields:
+      - label: 'Meta'
+        required: false
+        name: 'meta'
+        widget: 'object'
+        fields:
           - { label: Title, name: title, widget: string, required: false }
           - { label: Description, name: description, widget: text, required: false }
           - { label: Canonical Link, name: canonicalLink, widget: string, required: false }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }}  
+          - { label: Noindex, name: noindex, widget: boolean, required: false } 
 
   - name: 'settings'
     label: 'Settings'
@@ -197,6 +228,8 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Site Title, name: siteTitle, widget: string }
           - { label: Site Url, name: siteUrl, widget: string, required: false }
           - { label: Site Description, name: siteDescription, widget: text, required: false }
-          - { label: Social Media Card, name: socialMediaCard, widget: object, 
-              fields:
-              - { label: Image, name: image, widget: image, required: false }}
+          - label: Social Media Card 
+            name: socialMediaCard 
+            widget: object 
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
