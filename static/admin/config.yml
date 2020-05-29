@@ -184,6 +184,15 @@ collections: # A list of collections the CMS should be able to edit
               widget: hidden,
               default: HomePage,
             }
+          - label: 'Carousel'
+            name: 'carousel' 
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: 
+                  - { label: Image, name: image, widget: image }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
