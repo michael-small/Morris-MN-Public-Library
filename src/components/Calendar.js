@@ -1,4 +1,5 @@
 import React from 'react';
+import './calendar.css'
 
 const googleCalendar = (props) => {
 
@@ -12,7 +13,7 @@ const googleCalendar = (props) => {
             </div>
         </div>
     )
-    
+
 }
 
 export default googleCalendar;
