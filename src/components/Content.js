@@ -80,7 +80,6 @@ const Content = ({ source, src, className = '' }) => {
         className={`Content ${className}`}
         dangerouslySetInnerHTML={{ __html: source }}
       />
-        <GoogleCalendar />
       </React.Fragment>
     )
   }
