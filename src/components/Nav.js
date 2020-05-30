@@ -89,18 +89,24 @@ export class Navigation extends Component {
             {/* Events */}
             <div
               className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
+                this.state.activeSubNav === 'events' ? 'active' : ''
               }`}
             >
               <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
-                }`}
-                onClick={() => this.toggleSubNav('posts')}
+              className="NavLink Nav--GroupParent" //temp fix that shows the "Events" properly styled but not highlighted when on an event page
+              
+              // I need to brush up on vanilla JS. Basically, trying to get the "Events" tab to be highlighted when on an events page
+
+              //   className={`NavLink Nav--GroupParent ${
+              //     this.props.location.pathname.includes(              
+              //       {subNav.events.map((link) => (
+              //         {link.slug}
+              //       ))})
+              //       ? 'active'
+              //       : ''
+              //   }`
+              // }
+                onClick={() => this.toggleSubNav('events')}
               >
                 Events
                 <div className="Nav--GroupLinks">
