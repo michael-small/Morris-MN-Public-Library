@@ -11,7 +11,6 @@ import GoogleCalendar from '../components/Calendar'
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
     <PageHeader
-      large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}

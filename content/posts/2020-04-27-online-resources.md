@@ -22,8 +22,6 @@ Client wants online resources to be on navigation bar
 
 [Biblioboard](https://library.biblioboard.com/categories/)
 
-[Audible](https://www.morrispublib.org/custom/web/content/Screen%20Shot%202020-03-31%20at%203.13.51%20PM.png) (Link isn't working on their enterprise website)
-
 [Knowbuddy Resources](http://virtual.knowbuddyresources.com/user/direct/info@knowbuddyresources.com/KNOWBUDDY)
 
 [ELM](http://www.elm4you.org/)

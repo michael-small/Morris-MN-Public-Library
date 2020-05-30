@@ -1,44 +1,22 @@
 ---
 template: DefaultPage
 slug: default
-title: Default
-featuredImage: https://ucarecdn.com/7ec2ff8c-5ef7-4dd8-b551-baa44d114cc3/
+title: Online Resources
+featuredImage: https://ucarecdn.com/14510630-d9e6-46b3-9d54-9a7f2ea051a7/-/crop/347x337/0,0/-/preview/
 meta:
   description: test meta description
   title: test meta title
 ---
-
-## This is the DefaultPage template
-
-Paragraphs are separated by a blank line.
-
-The second paragraph. This is placeholder text that our web designers put here to make sure words appear properly on your website. _Italic_, **bold**, and `monospace`.
-
-### Unordered lists:
-
-- this one
-- that one
-- the other one
-
-### Ordered lists:
-
-1.  first item
-1.  second item
-1.  third item
-
-> Block quotes are written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
+* [Meet Libby](https://help.libbyapp.com/)
+* [Onedrive](http://vikingdigitallibrary.lib.overdrive.com/AA6D06CD-E222-4792-A1C6-D557D8B85BDD/10/50/en/Default.htm)
+* [AskMN](https://askmn.org/)
+* [Hoopla](https://www.hoopladigital.com/)
+* [Tumble Book Library](https://www.tumblebooklibrary.com/auto_login.aspx?U=tumble735&P=books)
+* [Biblioboard](https://library.biblioboard.com/categories/)
+* [Audible](https://www.morrispublib.org/custom/web/content/Screen%20Shot%202020-03-31%20at%203.13.51%20PM.png) 
+* [Knowbuddy Resources](http://virtual.knowbuddyresources.com/user/direct/info@knowbuddyresources.com/KNOWBUDDY)
+* [ELM](http://www.elm4you.org/)
+* [MnLink](https://www.mnlinkgateway.org/zportal/zengine?VDXaction=ZSearchSimple)
+* [Reading Rockets](https://www.readingrockets.org/books/booksbytheme)
+* [PBS KIDS FOR ADULTS](https://www.pbs.org/parents/page/play-and-learn-at-home-with-pbs-kids)
+* [PBS KIDS](https://pbskids.org/)

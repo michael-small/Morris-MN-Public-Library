@@ -75,12 +75,10 @@ const Content = ({ source, src, className = '' }) => {
     source = withContentImages(source)
 
     return (
-      <React.Fragment>
       <div
         className={`Content ${className}`}
         dangerouslySetInnerHTML={{ __html: source }}
       />
-      </React.Fragment>
     )
   }
 
