@@ -193,6 +193,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields: 
                   - { label: Image, name: image, widget: image }
+                  - { label: Alternate, name: alt, widget: string, required: true }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }

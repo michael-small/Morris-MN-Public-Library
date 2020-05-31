@@ -3,8 +3,11 @@ template: HomePage
 carousel:
   images:
     - image: 'https://ucarecdn.com/73e04457-506e-4040-9a8c-30895021ef38/'
+      alt: 'volunteers'
     - image: 'https://ucarecdn.com/af6cd617-ffad-42ac-a757-19795ea9e632/'
+      alt: 'new computers'
     - image: 'https://ucarecdn.com/289987dd-fa16-45b4-9841-4c17764d0b75/'
+      alt: 'book stack'
 slug: ''
 title: Morris Public Library
 subtitle: '**Work in progress**'
