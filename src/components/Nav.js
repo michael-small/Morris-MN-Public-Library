@@ -26,6 +26,7 @@ export class Navigation extends Component {
       activeSubNav: this.state.activeSubNav === subNav ? false : subNav
     })
 
+
   render() {
     const { active } = this.state,
       { subNav } = this.props,
@@ -34,13 +35,29 @@ export class Navigation extends Component {
           to={to}
           className={`NavLink ${
             to === this.state.currentPath ? 'active' : ''
-          } ${className}`}
+            } ${className}`}
           onClick={this.handleLinkClick}
           {...props}
         >
           {children}
         </Link>
       )
+
+    // This function checks to see if a slug exists in the activated route.
+    // If so, then the dropdown class will be 'active'
+    const checkSlugInNav = () => {
+      let defaultClass = 'NavLink Nav--GroupParent'; // By default, the classname does NOT include active
+      let slugArray = subNav.events.map((link) => { // Grab all the slugs, and put into an array
+        return link.slug
+      })
+
+      slugArray.forEach(slug => { // Now, if the active route includes the slug, set the dropdown class to active
+        if (this.props.location.pathname.includes(slug)) {
+          defaultClass = 'NavLink Nav--GroupParent active' 
+        }
+      });
+      return defaultClass // In the end, we return the classname, whether or not it is active.
+    }
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
@@ -56,18 +73,19 @@ export class Navigation extends Component {
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
+                }`}
             >
               <span
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
+                    this.props.location.pathname.includes('blog') ||
+                    this.props.location.pathname.includes('post-categories')
                     ? 'active'
                     : ''
-                }`}
+                  }`}
                 onClick={() => this.toggleSubNav('posts')}
               >
+
                 Blog
                 <div className="Nav--GroupLinks">
                   <NavLink to="/blog/" className="Nav--GroupLink">
@@ -90,22 +108,10 @@ export class Navigation extends Component {
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'events' ? 'active' : ''
-              }`}
+                }`}
             >
               <span
-              className="NavLink Nav--GroupParent" //temp fix that shows the "Events" properly styled but not highlighted when on an event page
-              
-              // I need to brush up on vanilla JS. Basically, trying to get the "Events" tab to be highlighted when on an events page
-
-              //   className={`NavLink Nav--GroupParent ${
-              //     this.props.location.pathname.includes(              
-              //       {subNav.events.map((link) => (
-              //         {link.slug}
-              //       ))})
-              //       ? 'active'
-              //       : ''
-              //   }`
-              // }
+                className={checkSlugInNav()} 
                 onClick={() => this.toggleSubNav('events')}
               >
                 Events
