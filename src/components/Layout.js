@@ -63,9 +63,9 @@ export default ({ children, meta, title }) => {
                 })
               : false,
             
-            events: data.allPosts.hasOwnProperty('edges')
-              ? data.eventsPages.edges.map(post => {
-                  return { ...post.node.fields, ...post.node.frontmatter }
+            events: data.eventsPages.hasOwnProperty('edges')
+              ? data.eventsPages.edges.map(event => {
+                  return { ...event.node.fields, ...event.node.frontmatter }
                 })
               : false
           }
