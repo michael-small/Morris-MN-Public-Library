@@ -90,13 +90,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Section 2, name: section2, widget: markdown }
           - label: Accordion
             name: accordion
-            widget: list,
+            widget: list
             fields:
               - { name: title, label: title, widget: string, default: '' }
               - { name: description, label: description, widget: string }
           - label: Gallery
             name: gallery
-            widget: list,
+            widget: list
             fields:
               - { name: image, label: Image, widget: image }
               - { name: alt, label: Alt, widget: string }
