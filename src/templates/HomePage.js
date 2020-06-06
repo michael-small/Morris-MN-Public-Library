@@ -10,25 +10,36 @@ import Image from '../components/Image'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import _kebabCase from 'lodash/kebabCase'
+import './HomePage.css'
 
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, carousel, body }) => { 
   const renderSlides = () => carousel.images.map((images, index) => {
-    return (
+  return (
     <div key={_kebabCase(images.alt) + '-' + index}>
-       <Image lazy={false} src={images.image} alt={images.alt} key={_kebabCase(images.alt) + '-' + index + '-' + index}/>
+      <Image
+          // resolution="small"
+          lazy={false}
+          src={images.image} 
+          alt={images.alt} 
+          key={_kebabCase(images.alt) + '-' + index + '-' + index}
+        />
     </div>
   )})
+
   var settings = {
     dots: true,
+    // lazyLoad: true,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
   <main className="Home">   
     
-    <div style={{margin: '4rem'}}>
+    <div className="carouselDiv">
       <Slider {...settings}>{renderSlides()}</Slider>
     </div>
 
