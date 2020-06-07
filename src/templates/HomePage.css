@@ -13,37 +13,3 @@
 iframe {
     width: 100%;
 }
-
-.carouselDiv {
-    padding: 4rem;
-}
-
-.slick-slide img {
-    background-color: aqua;
-    max-height: 80vh;
-    width: 100vw;
-    padding: 0 20px;
-}
-
-.slick-slider .slick-list {
-    max-height: 80vh;
-}
-
-.slick-slider .slick-track {
-    max-height: 80vh;
-}
-
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: #c44;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-
-/* .slick-slider {
-    background-color: aqua;
-} */
