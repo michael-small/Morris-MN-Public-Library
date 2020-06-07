@@ -1,15 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
-import './HomePage.css'
 import Image from '../components/Image'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import _kebabCase from 'lodash/kebabCase'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './HomePage.css'
 
 
@@ -18,31 +14,17 @@ export const HomePageTemplate = ({ title, carousel, body }) => {
   const renderSlides = () => carousel.images.map((images, index) => {
   return (
     <div key={_kebabCase(images.alt) + '-' + index}>
-      <Image
-          // resolution="small"
-          lazy={false}
-          src={images.image} 
-          alt={images.alt} 
-          key={_kebabCase(images.alt) + '-' + index + '-' + index}
-        />
+      <img src={images.image} />
+      <p className="legend">Legend {index}</p>
+
     </div>
   )})
 
-  var settings = {
-    dots: true,
-    // lazyLoad: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
-  <main className="Home">   
-    
-    <div className="carouselDiv">
-      <Slider {...settings}>{renderSlides()}</Slider>
-    </div>
-
+  <main className="Home">
+    <Carousel showArrows={true}>
+      {renderSlides()}
+    </Carousel>
     <section className="section">
       <div className="container">
         <h1>{title}</h1>
