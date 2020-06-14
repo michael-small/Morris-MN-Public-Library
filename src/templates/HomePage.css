@@ -4,14 +4,20 @@
     }
     
     /* If we only want to limit the height of carousel for bigger screens. See more below */
-    /* .carousel .slide img {
+    .carousel .slide img {
         max-height: 30vmax; 
-        width: auto;
-    } */
+        width: cover;
+    }
+    .carousel-smallDisplay {
+        display: none;
+    }
  }
 
  @media (max-width: 550px) {
     .largeDisplay {
+        display: none;
+    }
+    .carousel-largeDisplay {
         display: none;
     }
  }
@@ -26,8 +32,8 @@ iframe {
     images the same height. Setting width:0 adds black to both side of the image and keeps the aspect ratio the same
     while not declaring width streteches the image to fill the width. Can also just be applied to larger screens insdie the media query above. */
 
-/* 
-.carousel .slide img {
+
+/* .carousel .slide img {
     max-height: 30vmax; 
     width: auto;
 }  */

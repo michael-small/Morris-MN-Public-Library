@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Image from '../components/Image'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import _kebabCase from 'lodash/kebabCase'
@@ -11,24 +10,30 @@ import './HomePage.css'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, carousel, body }) => { 
-  const renderSlides = () => carousel.images.map((images, index) => {
+  const renderSlides = () => carousel.images.concat(carousel.images).map((images, index) => {
   return (
     <div key={_kebabCase(images.alt) + '-' + index}>
       <img
         src={images.image} 
         alt={images.alt}  
         loading="lazy"/>
-      <p className="legend">Legend {index+1}</p>
+      <p className="legend">{images.alt}</p>
 
     </div>
   )})
 
   return (
   <main className="Home">
-    <Carousel className="carousel-wrapper" showArrows={true} dynamicHeight={true} autoPlay={true} infiniteLoop={true} 
+    
+    <Carousel className="carousel-smallDisplay" showArrows={true} dynamicHeight={true} autoPlay={true} infiniteLoop={true} 
       showThumbs={false} showStatus={false}>
       {renderSlides()}
     </Carousel>
+
+    <Carousel className="carousel-largeDisplay"  centerMode centerSlidePercentage="40" autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}>
+      {renderSlides()}
+    </Carousel>
+
     <section className="section">
       <div className="container">
         <h1>{title}</h1>
