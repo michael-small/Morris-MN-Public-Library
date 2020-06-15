@@ -80,18 +80,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// A method that put the image in the background. The carousel however won't appear if it's just a div, since the size of the carousel is
-//  dependent on the size of it's content, so the only way to fully use this method is to put the images inside the div but make their
-// opacity 0
-  // const renderSlides = () => carousel.images.map((images, index) => {
-  //   return (
-  //     <div className="image-container" key={_kebabCase(images.alt) + '-' + index}
-  //      style={{ backgroundImage: `url(${images.image})` }} >
-  //       <img
-  //         src={images.image} 
-  //         alt={images.alt}  
-  //         loading="lazy"/>
-  //       <p className="legend">Legend {index+1}</p>
-  //     </div>
-  //   )})
