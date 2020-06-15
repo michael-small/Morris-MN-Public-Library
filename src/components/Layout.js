@@ -35,6 +35,22 @@ export default ({ children, meta, title }) => {
               }
             }
           }
+
+          eventsPages: allMarkdownRemark(
+            filter: { fields: { contentType: { eq: "events" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                }
+              }
+            }
+          }
         }
       `}
       render={data => {
@@ -44,6 +60,12 @@ export default ({ children, meta, title }) => {
             posts: data.allPosts.hasOwnProperty('edges')
               ? data.allPosts.edges.map(post => {
                   return { ...post.node.fields, ...post.node.frontmatter }
+                })
+              : false,
+            
+            events: data.eventsPages.hasOwnProperty('edges')
+              ? data.eventsPages.edges.map(event => {
+                  return { ...event.node.fields, ...event.node.frontmatter }
                 })
               : false
           }

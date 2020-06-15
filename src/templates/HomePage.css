@@ -2,10 +2,22 @@
     .smallDisplay {
         display: none;
     }
+    
+    /* If we only want to limit the height of carousel for bigger screens. See more below */
+    .carousel .slide img {
+        max-height: 30vmax; 
+        width: cover;
+    }
+    .carousel-smallDisplay {
+        display: none;
+    }
  }
 
  @media (max-width: 550px) {
     .largeDisplay {
+        display: none;
+    }
+    .carousel-largeDisplay {
         display: none;
     }
  }
@@ -14,36 +26,42 @@ iframe {
     width: 100%;
 }
 
-.carouselDiv {
-    padding: 4rem;
-}
 
-.slick-slide img {
-    background-color: aqua;
-    max-height: 80vh;
-    width: 100vw;
-    padding: 0 20px;
-}
-
-.slick-slider .slick-list {
-    max-height: 80vh;
-}
-
-.slick-slider .slick-track {
-    max-height: 80vh;
-}
-
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: #c44;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+/* METHOD 1:
+    Since the images are too big on laptop and desktop screens, this limits the max height to be a ratio of the viewport making all 
+    images the same height. Setting width:0 adds black to both side of the image and keeps the aspect ratio the same
+    while not declaring width streteches the image to fill the width. Can also just be applied to larger screens insdie the media query above. */
 
 
-/* .slick-slider {
-    background-color: aqua;
+/* .carousel .slide img {
+    max-height: 30vmax; 
+    width: auto;
+}  */
+
+
+
+/* METHOD 2:
+    The first two below are a part of the background-image method. For our setup, I needed to put the image in html(since the carousel's 
+    height is determined by it's content) and make opacity of images 0 to properly use the background method.
+    See the bottom of HomePage.js for more info */
+
+/*.carousel-wrapper,
+.carousel,
+.carousel > .slider-wrapper,
+.carousel > .slider-wrapper > .slider {
+  height: 100%;
+} */
+
+/* .image-container {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* 
+.carousel .slide img {
+    max-height: 30vmax; 
+    opacity: 0
 } */

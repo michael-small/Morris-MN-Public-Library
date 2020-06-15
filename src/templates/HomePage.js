@@ -1,47 +1,38 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
-import './HomePage.css'
-import Image from '../components/Image'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import _kebabCase from 'lodash/kebabCase'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './HomePage.css'
 
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, carousel, body }) => { 
-  const renderSlides = () => carousel.images.map((images, index) => {
+  const renderSlides = () => carousel.images.concat(carousel.images).map((images, index) => {
   return (
     <div key={_kebabCase(images.alt) + '-' + index}>
-      <Image
-          // resolution="small"
-          lazy={false}
-          src={images.image} 
-          alt={images.alt} 
-          key={_kebabCase(images.alt) + '-' + index + '-' + index}
-        />
+      <img
+        src={images.image} 
+        alt={images.alt}  
+        loading="lazy"/>
+      <p className="legend">{images.alt}</p>
+
     </div>
   )})
 
-  var settings = {
-    dots: true,
-    // lazyLoad: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
-  <main className="Home">   
+  <main className="Home">
     
-    <div className="carouselDiv">
-      <Slider {...settings}>{renderSlides()}</Slider>
-    </div>
+    <Carousel className="carousel-smallDisplay" showArrows={true} dynamicHeight={true} autoPlay={true} infiniteLoop={true} 
+      showThumbs={false} showStatus={false}>
+      {renderSlides()}
+    </Carousel>
+
+    <Carousel className="carousel-largeDisplay"  centerMode centerSlidePercentage="40" autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}>
+      {renderSlides()}
+    </Carousel>
 
     <section className="section">
       <div className="container">
@@ -89,3 +80,18 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// A method that put the image in the background. The carousel however won't appear if it's just a div, since the size of the carousel is
+//  dependent on the size of it's content, so the only way to fully use this method is to put the images inside the div but make their
+// opacity 0
+  // const renderSlides = () => carousel.images.map((images, index) => {
+  //   return (
+  //     <div className="image-container" key={_kebabCase(images.alt) + '-' + index}
+  //      style={{ backgroundImage: `url(${images.image})` }} >
+  //       <img
+  //         src={images.image} 
+  //         alt={images.alt}  
+  //         loading="lazy"/>
+  //       <p className="legend">Legend {index+1}</p>
+  //     </div>
+  //   )})

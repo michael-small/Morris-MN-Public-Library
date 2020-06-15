@@ -3,6 +3,7 @@ import ReactDOMServer from 'react-dom/server'
 import Marked from 'react-markdown'
 import PropTypes from 'prop-types'
 import Image from './Image'
+import GoogleCalendar from './Calendar'
 
 import './Content.css'
 
