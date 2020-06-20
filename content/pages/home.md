@@ -1,9 +1,16 @@
 ---
 template: HomePage
-slug: ""
+carousel:
+  images:
+    - image: 'https://ucarecdn.com/73e04457-506e-4040-9a8c-30895021ef38/'
+      alt: 'volunteers'
+    - image: 'https://ucarecdn.com/af6cd617-ffad-42ac-a757-19795ea9e632/'
+      alt: 'new computers'
+    - image: 'https://ucarecdn.com/289987dd-fa16-45b4-9841-4c17764d0b75/'
+      alt: 'book stack'
+slug: ''
 title: Morris Public Library
-featuredImage: https://ucarecdn.com/1d7ea5f5-317f-4546-8914-3dd443a8b2ca/
-subtitle: "**Work in progress**"
+subtitle: '**Work in progress**'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter

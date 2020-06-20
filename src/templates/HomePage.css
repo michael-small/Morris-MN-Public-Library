@@ -2,10 +2,20 @@
     .smallDisplay {
         display: none;
     }
+    .carousel .slide img {
+        max-height: 30vmax; 
+        width: cover;
+    }
+    .carousel-smallDisplay {
+        display: none;
+    }
  }
 
  @media (max-width: 550px) {
     .largeDisplay {
+        display: none;
+    }
+    .carousel-largeDisplay {
         display: none;
     }
  }

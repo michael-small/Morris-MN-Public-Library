@@ -1,29 +1,54 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
-import './HomePage.css'
-import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import GoogleCalendar from '../components/Calendar'
+import _kebabCase from 'lodash/kebabCase'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './HomePage.css'
+
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({ title, carousel, body }) => { 
+  const renderSlides = () => carousel.images.concat(carousel.images).map((images, index) => {
+  return (
+    <div key={_kebabCase(images.alt) + '-' + index}>
+      <img
+        src={images.image} 
+        alt={images.alt}  
+        loading="lazy"/>
+      <p className="legend">{images.alt}</p>
+
+    </div>
+  )})
+
+  return (
   <main className="Home">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+    
+    <Carousel className="carousel-smallDisplay" showArrows={true} dynamicHeight={true} autoPlay={true} infiniteLoop={true} 
+      showThumbs={false} showStatus={false}>
+      {renderSlides()}
+    </Carousel>
+
+    <Carousel className="carousel-largeDisplay"  centerMode centerSlidePercentage="40" autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}>
+      {renderSlides()}
+    </Carousel>
 
     <section className="section">
       <div className="container">
+        <h1>{title}</h1>
         <Content source={body} />
-        <GoogleCalendar />
+        <div className="smallDisplay">
+          <iframe src="https://calendar.google.com/calendar/b/4/embed?height=400&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FChicago&amp;src=ZGV2dGVzdGVyMmsyMEBnbWFpbC5jb20&amp;color=%23039BE5&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0&amp;mode=AGENDA&amp;title=Does%20title%20even%20matter%3F&amp;showTitle=0&amp;showDate=0&amp;showNav=1" className="mobileIframe" width="800" height="600" frameBorder="0" scrolling="no"></iframe>
+        </div>
+        <div className="largeDisplay">
+          <iframe src="https://calendar.google.com/calendar/b/4/embed?height=400&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FChicago&amp;src=ZGV2dGVzdGVyMmsyMEBnbWFpbC5jb20&amp;color=%23039BE5&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0&amp;mode=MONTH&amp;title=Does%20title%20even%20matter%3F&amp;showTitle=0&amp;showDate=0&amp;showNav=1" className="desktopIframe" width="800" height="600" frameBorder="0" scrolling="no"></iframe>
+        </div>
       </div>
     </section>
   </main>
-)
+  )
+}
 
 // Export Default HomePage for front-end
 const HomePage = ({ data: { page } }) => (
@@ -45,8 +70,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        subtitle
-        featuredImage
+        carousel {
+          images {
+            image
+            alt
+          }
+        }
       }
     }
   }
