@@ -67,10 +67,39 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
+
+            {/* Events */}
+            <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'events' ? 'active' : ''
+                }`}
+            >
+              <span
+                className={checkSlugInNav()} 
+                onClick={() => this.toggleSubNav('events')}
+              >
+                Events
+                <div className="Nav--GroupLinks">
+                  {subNav.events.map((link, index) => (
+                    <NavLink
+                      to={link.slug}
+                      key={'posts-subnav-link-' + index}
+                      className="Nav--GroupLink"
+                    >
+                      {link.title}
+                    </NavLink>
+                  ))}
+                </div>
+              </span>
+            </div>
+
+            <NavLink to="/readersadvisory/">Reader's Advisory</NavLink>
+            <NavLink to="/default/">Online Resources</NavLink>
+            <NavLink to="/contact/">Contact</NavLink>
+            <NavLink to="/default/">About</NavLink>
 
             {/* Posts */}
-            <div
+            {/* <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
                 }`}
@@ -102,35 +131,8 @@ export class Navigation extends Component {
                   ))}
                 </div>
               </span>
-            </div>
+            </div> */}
 
-            {/* Events */}
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'events' ? 'active' : ''
-                }`}
-            >
-              <span
-                className={checkSlugInNav()} 
-                onClick={() => this.toggleSubNav('events')}
-              >
-                Events
-                <div className="Nav--GroupLinks">
-                  {subNav.events.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </span>
-            </div>
-
-            <NavLink to="/default/">Online Resources</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
