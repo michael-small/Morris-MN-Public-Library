@@ -4,9 +4,8 @@ slug: about
 title: About
 featuredImage: https://ucarecdn.com/14510630-d9e6-46b3-9d54-9a7f2ea051a7/-/crop/347x337/0,0/-/preview/
 accordion:
-  - description: A lot
-    title: Registration
-    content: Residents of Stevens County and the surrounding area are encouraged to
+  - title: Registration
+    description: Residents of Stevens County and the surrounding area are encouraged to
       fill out a registration card for access to the library's collection
       (Viking Library System). Proof of residency and a valid I.D. are required.
       Children may register for their own card with parent/guardian consent.
@@ -14,14 +13,14 @@ accordion:
       'home' library card with the Viking Library System. Morris Library users
       are expected to abide by the policies set by this library board.
   - title: Library Behavior
-    content: The library is used by many people for a variety of activities. It is
+    description: The library is used by many people for a variety of activities. It is
       hoped that the space will be used in a way which is respectful to all.
       That means no running and using a quiet voice that is not disruptive to
       others (cell phones should be used in the lobby). While we encourage
       children to have fun, the library is not a playground. Children should not
       be left alone, if they cannot manage their behavior appropriately.
   - title: Circulation and Fines
-    content: >-
+    description: >-
       (we will have to figure out how to format this if we use dropdowns for
       this content in particular)
 
@@ -66,7 +65,7 @@ accordion:
 
       In order to retain borrowing privileges, fines and fees must be kept under $10.00 and paid in a timely manner.
   - title: Computer Use
-    content: >-
+    description: >-
       The library has 6 computers with internet access available to the public.
       Individuals are asked to read our internet policy and then sign-up to use
       the computers. There is an online limit of one hour, if people are
@@ -81,7 +80,7 @@ accordion:
 
       Wireless WiFi access is also available to those who want to use their own laptop in the library. Electrical outlets are along the walls.
   - title: Internet Policy
-    content: >-
+    description: >-
       Morris Public Library
 
       Internet Use and Safety Policy
@@ -145,7 +144,7 @@ accordion:
          ___________________________________________________
            Signature of parent or guardian
   - title: Meeting Room
-    content: >-
+    description: >-
       A meeting room is available for community functions. Please check the
       calendar for availability and then call the library to reserve it.
       Commercial businesses are charged $25.00/day for use of the room.
@@ -153,7 +152,7 @@ accordion:
 
       When reserving the room, please allow for set-up and tear-down time. The room should be left in the condition in which it was found, or better.
   - title: Friends of the Library
-    content: >-
+    description: >-
       The Friends of the Library is a group of dedicated library users who host
       a book sale in July to raise money to enrich and strengthen the collection
       and programs the library provides. In the past they have sponsored author
