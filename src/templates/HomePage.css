@@ -2,23 +2,25 @@
     .smallDisplay {
         display: none;
     }
-    .carousel .slide img {
-        max-height: 30vmax; 
-        width: cover;
-    }
-    .carousel-smallDisplay {
-        display: none;
-    }
- }
+}
 
- @media (max-width: 550px) {
+@media (max-width: 550px) {
     .largeDisplay {
         display: none;
     }
+}
+
+@media (min-width: 1025px) {
+    .carousel-smallDisplay {
+        display: none;
+    } 
+}
+
+@media (max-width: 1024px) {
     .carousel-largeDisplay {
         display: none;
     }
- }
+}
 
 iframe {
     width: 100%;
