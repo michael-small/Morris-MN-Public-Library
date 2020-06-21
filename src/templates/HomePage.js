@@ -6,6 +6,7 @@ import _kebabCase from 'lodash/kebabCase'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './HomePage.css'
+import PageHeader from '../components/PageHeader'
 
 
 // Export Template for use in CMS preview
@@ -13,24 +14,23 @@ export const HomePageTemplate = ({ title, carousel, body }) => {
   const renderSlides = () => carousel.images.concat(carousel.images).map((images, index) => {
   return (
     <div key={_kebabCase(images.alt) + '-' + index}>
-      <img
-        src={images.image} 
-        alt={images.alt}  
-        loading="lazy"/>
-      <p className="legend">{images.alt}</p>
-
+        <PageHeader
+            title= {"Image " + index}
+            subtitle="Subtitle goes here"
+            backgroundImage={images.image}
+          />
     </div>
   )})
 
   return (
   <main className="Home">
-    
+
     <Carousel className="carousel-smallDisplay" showArrows={true} dynamicHeight={true} autoPlay={true} infiniteLoop={true} 
       showThumbs={false} showStatus={false}>
       {renderSlides()}
     </Carousel>
 
-    <Carousel className="carousel-largeDisplay"  centerMode centerSlidePercentage="40" autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}>
+    <Carousel className="carousel-largeDisplay"  centerMode centerSlidePercentage="50" autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showStatus={false}>
       {renderSlides()}
     </Carousel>
 
