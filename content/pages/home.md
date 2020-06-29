@@ -2,34 +2,29 @@
 template: HomePage
 carousel:
   images:
-    - image: 'https://ucarecdn.com/73e04457-506e-4040-9a8c-30895021ef38/'
-      alt: 'volunteers'
-    - image: 'https://ucarecdn.com/af6cd617-ffad-42ac-a757-19795ea9e632/'
-      alt: 'new computers'
-    - image: 'https://ucarecdn.com/289987dd-fa16-45b4-9841-4c17764d0b75/'
-      alt: 'book stack'
+    - alt: Garlic pile.
+      image: 'https://ucarecdn.com/bea6e98d-bf47-4b49-9ce2-8f7be7136538/'
+      imageSubtitle: Check out our garlic selection...
+      imageTitle: The best garlic in central Minnesota!
+    - alt: Michael looking at garlic.
+      image: 'https://ucarecdn.com/80ec8bb9-6978-4f2e-84ad-c819e2cc1958/'
+      imageSubtitle: We swear we don't bite!
+      imageTitle: Learn what we are about
+    - alt: Anita with gourd.
+      image: 'https://ucarecdn.com/7d648e30-2312-4dfc-8fec-9dd74329ddd6/'
+      imageSubtitle: Check it out!
+      imageTitle: We love to write about what we love
+    - alt: Phil bundling garlic.
+      image: 'https://ucarecdn.com/8a71c034-e265-49c0-a5c8-4c468feebb50/'
+      imageSubtitle: It's always getting better
+      imageTitle: Our farm is where the magic happens
 slug: ''
-title: Morris Public Library
-subtitle: '**Work in progress**'
+title: What this site is all about
+subtitle: ''
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  description: Home page with site information
+  title: Home
 ---
-Browse our [Enterprise Catalog](https://www.morrispublib.org/client/en_US/mo/?dt=list)
+Do you like farming, baking, or camping? We take pride in all of those activities and so much more.
 
-# Library Hours
-
-Covid Hours: 
-
-* Mon-Fri 9am-5pm (available, but closed to the public), 
-* Curbside Pick-Up Tuesdays and Fridays 2-4pm
-
-Usual hours:
-
-* Monday - Thursday: 10:00AM - 8:00PM
-* Friday - Saturday 10:00AM - 5:00PM
-* Closed Sunday
-
-
-
-# Calendar
+#
